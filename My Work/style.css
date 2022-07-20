@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  line-height: 1.6em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: auto;
+}
+
+.button {
+  background: var(--clr-accent, blue);
+  color: var(--clr-text, #fff);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 250ms ease-in-out opacity 250ms linear;
+}
+
+.button:hover,
+.button:focus {
+  transform: scale(1.12);
+  opacity: 0.8;
+}
+
+.spacing > * + * {
+  margin-top: var(--spacer, 2em);
+}
+
+section {
+  padding: 5em;
+}
+
+.section-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+#header {
+  background-color: #222;
+  color: #fff;
+  padding: 15em 0;
+  text-align: center;
+}
+@supports (background-blend-mode: multiply) {
+  #header {
+    background: url(images/game1.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+
+#header h1 {
+  font-size: clamp(3em, calc(5vw + 1em), 5em);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.hot-game {
+  background-color: #ddd;
+}
