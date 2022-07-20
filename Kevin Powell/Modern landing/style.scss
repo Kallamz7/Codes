@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
+.button {
+  background-color: var(--clr-accent, blue);
+  color: var(--clr-text, white);
+
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  border-radius: 0.3em;
+
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+
+.button:hover,
+.btn:focus {
+  transform: scale(1.12);
+  opacity: 0.8;
+}
+
+#header {
+  background-color: #222;
+  color: #fff;
+  @supports (background-blend-mode: multiply) {
+    background-image: url(images/game1.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+  }
+
+  padding: 15em 0;
+
+  text-align: center;
+}
+
+#header h1 {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1.1em;
+  text-transform: uppercase;
+}

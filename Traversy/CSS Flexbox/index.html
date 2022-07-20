@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        @media(min-width:700px){
+            .container-1 {
+            display: flex;
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; 
+               
+            flex-direction: column; */
+        }
+
+        .container-2 {
+            display: flex;
+            /* justify-content: flex-start;
+                justify-content: flex-end;
+                justify-content: center; 
+                justify-content: space-around; */
+
+            justify-content: space-between;
+        }
+
+        .container-3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        }        
+
+        .container-1 div, .container-2 div, .container-3 div {
+            border: 1px solid #333;
+            padding: 10px;
+        }
+
+        .box-1 {
+            flex: 1;
+            order: 3;
+        }
+
+        .box-2 {
+            flex: 2;
+            order: 2;
+        }
+
+        .box-3 {
+            flex: 1;
+            order: 1;
+        }
+
+        .container-2-box {
+            flex-basis: 27%;
+        }
+
+        .container-3-box {
+            flex-basis: 12%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h2>Box One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam.</p>
+        </div>
+
+        <div class="box-2">
+            <h2>Box Two</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam.</p>
+        </div>
+
+        <div class="box-3">
+            <h2>Box Three</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h2>Box Four</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis in repellendus officia earum accusantium, amet corporis necessitatibus quia! Repudiandae.</p>
+        </div>
+
+        <div class="container-2-box">
+            <h2>Box Five</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sed voluptas, atque eveniet praesentium officiis quasi vero alias necessitatibus mollitia?</p>
+        </div>
+
+        <div class="container-2-box">
+            <h2>Box Six</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corrupti nostrum ut iure necessitatibus sed ea labore omnis doloremque amet?</p>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div class="container-3-box">
+            <h2>Box Seven</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias, quibusdam numquam sit qui explicabo eius excepturi soluta hic aspernatur.</p>
+        </div>
+
+        <div class="container-3-box">
+            <h2>Box Eight</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloremque itaque hic ipsa in sapiente quae amet exercitationem esse similique.</p>
+        </div>
+
+        <div class="container-3-box">
+            <h2>Box Nine</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia facilis, quas nam quibusdam minima velit optio molestias et eveniet iure!</p>
+        </div>
+
+        <div class="container-3-box">
+            <h2>Box Ten</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur incidunt voluptas ex quos aliquid consequuntur odio maiores quisquam labore.</p>
+        </div>
+
+        <div class="container-3-box">
+            <h2>Box Eleven</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi optio voluptatum ducimus et, esse ipsa omnis voluptatibus! Ratione, quae perferendis?</p>
+        </div>
+
+        <div class="container-3-box">
+            <h2>Box Twelve</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita a vel quidem laudantium eos repellat odio reprehenderit sunt ab beatae!</p>
+        </div>
+    </div>
+</body>
+</html>

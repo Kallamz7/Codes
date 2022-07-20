@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+        }
+
+
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore consectetur dolorum eveniet omnis optio, dolorem fugiat minima iure molestiae est, sint nam voluptates expedita quidem a maxime exercitationem quisquam perferendis soluta ipsum ratione. Accusantium quaerat amet animi nemo ex repellat repellendus cupiditate est reiciendis distinctio, deleniti reprehenderit nulla eaque?
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore consectetur dolorum eveniet omnis optio, dolorem fugiat minima iure molestiae est, sint nam voluptates expedita quidem a maxime exercitationem quisquam perferendis soluta ipsum ratione. Accusantium quaerat amet animi nemo ex repellat repellendus cupiditate est reiciendis distinctio, deleniti reprehenderit nulla eaque?
+        </div>
+
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore consectetur dolorum eveniet omnis optio, dolorem fugiat minima iure molestiae est, sint nam voluptates expedita quidem a maxime exercitationem quisquam perferendis soluta ipsum ratione. Accusantium quaerat amet animi nemo ex repellat repellendus cupiditate est reiciendis distinctio, deleniti reprehenderit nulla eaque?
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore consectetur dolorum eveniet omnis optio, dolorem fugiat minima iure molestiae est, sint nam voluptates expedita quidem a maxime exercitationem quisquam perferendis soluta ipsum ratione. Accusantium quaerat amet animi nemo ex repellat repellendus cupiditate est reiciendis distinctio, deleniti reprehenderit nulla eaque?
+        </div>
+    </div>
+</body>
+</html>

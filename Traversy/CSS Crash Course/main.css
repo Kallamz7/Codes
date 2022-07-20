@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    /* padding-top: 30px; */
+    /* margin-top: 30px; */
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: red;
+}
+
+.button {
+    padding: 10px 15px;
+    /* margin-top: 30px; */
+    background-color: #000;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: palevioletred;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin-left: 30px;
+    margin: auto;
+}
+
+.clr {
+    clear: both;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+
+    border: 5px red solid;
+
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.box-1 h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    word-spacing: 1em;
+    line-height: 1em;
+    padding-bottom: 10px;
+}
+
+.box-2 {
+    border: 6px dotted black;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+
+.box-2 h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 2.5em;
+    font-style: italic;
+    text-decoration: underline dotted;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    word-spacing: 1em;
+    line-height: 1em;
+}
+
+.categories {
+    border: 4px solid rgb(76, 76, 248);
+    /* margin: 20px 0;
+    padding: 20px; */
+}
+
+.categories h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-transform: lowercase;
+    text-decoration: underline wavy;
+    text-align: center;
+    margin: 20px;
+    /* padding: 10px; */
+
+}
+
+.categories ul {
+    list-style: none;
+    /* list-style-image: url(images/Checkmark-1.png); */
+    padding-top: 20px;
+    /* padding-left: 10px; */
+    /* padding-bottom: 30px; */
+}
+
+.categories li {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #444;
+    /* list-style-image: url(images/Checkmark-1.png); */
+    /*padding-right: 10px; */
+    /* padding: 0 20px; */
+    padding-left: 0;
+}
+
+.categories li:last-child {
+    border-bottom: 0;
+}
+
+.my-form {
+    margin: 20px 0;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding: 5px 0;
+}
+
+.my-form label {
+    display: block;
+    font-style: italic;
+
+}
+
+.my-form input[type="text"], .my-form input[type="email"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid black;
+    padding: 5px;
+    /* margin: 5px; */
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    /* border: 1px solid black; */
+}
+
+#side-bar {
+    float: right;
+    width: 30%;
+    /* border: 1px solid black; */
+    background-color: #333;
+    color: #fff;
+}
+
+.p-box {
+    width: 700px;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+    background-image: url(images/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100px 200px;
+    background-position: center top;
+}
+
+.p-box h1 {
+    position: absolute;
+    left: 200px;
+    top: 400px;
+}
+
+.fix-me {
+    position: fixed;
+    text-transform: uppercase;
+    top: 500px;
+}
+
+.my-list ul {
+    list-style: none;
+}
+
+.my-list li:first-child {
+    background: red;
+}
+
+.my-list li:last-child {
+    background: green;
+}
+
+.my-list li:nth-child(7) {
+    background: coral;
+}
+
+.my-list li:nth-child() {
+    background: violet;
+}
+
+
+
