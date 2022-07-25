@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: url(images/bg.jpg) no-repeat center center/cover;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.animated {
+  background: url(images/text-bg1.jpeg);
+  color: transparent;
+  width: 1000px;
+  padding: 0.5em;
+  font-family: "charmonman", cursive;
+  font-size: 7rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: moveBg 90s linear infinite;
+  -webkit-animation: moveBg 20s linear infinite;
+}
+
+/* Text Background Animation */
+@keyframes moveBg {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+p {
+  font-size: 1.5em;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+span {
+  font-size: 1.6em;
+  color: burlywood;
+}
