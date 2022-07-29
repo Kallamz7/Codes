@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+  color: rgb(144, 95, 32);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background-image: url(images/beach-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 15px;
+  font-size: clamp(3em, calc(5vw + 1em), 5em);
+  text-transform: capitalize;
+  line-height: 1em;
+}
+
+header .button {
+  color: rgb(144, 95, 32);
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 1em;
+  border: 1px solid rgb(144, 95, 32);
+  border-radius: 10px;
+  text-decoration: none;
+  transform: scale(1);
+  transition: 250ms linear;
+}
+
+header .button:hover {
+  background-color: rgb(144, 95, 32);
+  color: #eee;
+  transform: scale(1.05);
+}
+
+section {
+  text-align: center;
+}
+
+article {
+  padding: 1em 0;
+}
+
+.sect-1 {
+  background: rgb(144, 95, 32);
+  color: #eee;
+  padding: 1em;
+}
+
+.sect-2 {
+  padding: 1em;
+}
+
+.sect-3 {
+  display: flex;
+}
+
+.artic-1,
+.artic-3 {
+  background: rgb(144, 95, 32);
+  color: #eee;
+}
