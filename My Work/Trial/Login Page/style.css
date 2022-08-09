@@ -8,6 +8,9 @@ body {
   background: rgb(24, 24, 178);
   color: white;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -46,7 +49,6 @@ body {
   width: 25em;
   height: 35em;
   margin: auto;
-  margin-top: 8%;
   padding: 2em;
   border: 1px solid white;
   border-radius: 5px;
