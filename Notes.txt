@@ -10,3 +10,23 @@ have nicer default colours in projects
 utitlity classes
 
 custom properties
+
+caveats
+
+incrementing & decrementing a value
+
+even & odd with modulus - % operator. Used to get the remainder of a division and can be used to tell if a situation is even or odd.
+
+loops
+while & do while loops
+for loops
+for each loops
+
+fuctions
+built in functions
+custom functions
+sending variables to functions: reference, value & global.
+anonymous functions(usort.)
+
+Objects & Classes
+
